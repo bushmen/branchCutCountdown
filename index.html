@@ -2,7 +2,7 @@
 
 <style>
 body {
-  background-image: url('./images/cuttingBranch.jpeg');
+  background-image: url('./images/waiting.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -23,16 +23,16 @@ html, body {
 
 <body>
   <div style="background-color:rgba(255, 255, 255, 0.65)" align="center">
-    <h1>Android Branch Cut Countdown!</h1>
-    <h2>Hear hear! At 4:30PM GMT Android release branch will be cut. </br></br>If you have any objections speak now or forever hold thy peace!</h2>
-    <h2>Time until branch cut: </h2> <h2 id="demo"></h2>
+    <h1>Marta's Vacation Countdown!</h1>
+    <h2>Hear hear! At 5:00PM GMT on 11th of August.</br></br>Marta is leaving for vacation!</h2>
+    <h2>Time until vacation: </h2> <h2 id="demo"></h2>
   </div>
 </body>
 
 
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Mar 22, 2023 16:30:00").getTime();
+var countDownDate = new Date("Aug 11, 2023 17:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -50,14 +50,14 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = hours + "h "
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
 
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "THE BRANCH HAS BEEN CUT!";
-    document.body.style.backgroundImage = "url('./images/branchCut.jpeg')"
+    document.getElementById("demo").innerHTML = "Marta left for vacation!";
+    document.body.style.backgroundImage = "url('./images/vacation_time.jpeg')"
   }
 }, 1000);
 </script>
